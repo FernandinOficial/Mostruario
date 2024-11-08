@@ -1,0 +1,681 @@
+
+.imgs-itens {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+/* A partir do momento em que o MOBILE quebra vai surgir o DESKTOP */
+@media (min-width: 768px) {
+  main > #most-mob {
+    display: none !important;
+  }
+}
+
+.row > div {
+  margin-bottom: 10vh;
+}
+
+.row > div > img {
+  width: 400px;
+  border-radius: 30px;
+}
+
+#invertido {
+  flex-direction: row-reverse;
+}
+
+.texto-titulo {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.texto-menor {
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+/* Estilo quando a largura do parágrafo quebrar no ponto menor que 768px exatamente */
+@media (max-width: 767px) {
+  main #most-desk {
+    display: none !important;
+  }
+
+  .row .d-flex {
+    display: inline-block !important;
+  }
+
+  .row > .d-flex > .row {
+    right: 50% !important;
+    left: 50% !important;
+  }
+
+  #invertido {
+    flex-direction: row-reverse !important;
+  }
+
+  .texto-titulo {
+    font-size: 32px;
+  }
+
+  .texto-menor {
+    font-size: 18px;
+  }
+}
+
+/* RODAPE */
+footer {
+  background-color: #2f6427 !important;
+  margin-top: 80px;
+}
+
+#footer-logo {
+  text-align: center;
+}
+
+#footer-logo img {
+  width: 150px !important;
+  margin-top: 10px;
+}
+
+#contato {
+  color: #fff;
+  margin-bottom: -5px;
+}
+
+.contato-container img {
+  width: 30px;
+}
+
+.contato-fluid {
+  display: flex;
+  /* alinhar verticalmente o texto */
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.contato-fluid > p {
+  /* alterar distanciamento */
+  margin-left: 20px;
+  /* alinha no centro da imagem */
+  margin-top: 15px;
+}
+
+.footer-img {
+  float: left;
+}
+
+.contato-container p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.copy {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-bottom: -5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* FORMULÁRIO LOGIN */
+#container {
+  width: 235px;
+  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #739e73;
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  height: fit-content;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form_login {
+  padding: 25px;
+}
+
+.title_user {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_user img {
+  height: 60px;
+  width: 60px;
+}
+
+.title_user h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+.img_icons img {
+  height: 38px;
+  width: 38px;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 30px;
+}
+
+.inputs input {
+  height: 36px;
+  width: 199px;
+  border-radius: 30px;
+  border: none;
+}
+
+input {
+  padding-left: 35px;
+  padding-right: 15px;
+}
+
+input[type="submit"] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.inputs label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.inputs i {
+  margin-left: 10px;
+  position: absolute;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+#input_submit {
+  height: 36px;
+  width: 200px;
+  border-radius: 30px;
+  border: none;
+  background-color: #2f6427;
+  color: #acefac;
+  font-weight: bold;
+}
+
+#a_login {
+  color: #acefac;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* FORMULÁRIO CADASTRO */
+#container {
+  width: 235px;
+  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #739e73;
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  height: fit-content;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form_cadastro {
+  padding: 25px;
+}
+
+.title_cadastro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_cadastro img {
+  height: 60px;
+  width: 60px;
+}
+
+.title_cadastro h2 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-weight: 900;
+}
+
+.img_cadastro img {
+  height: 38px;
+  width: 38px;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 30px;
+}
+
+.inputs_cadastro input {
+  height: 36px;
+  width: 199px;
+  border-radius: 30px;
+  border: none;
+}
+
+.inputs_cadastro label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.inputs_cadastro i {
+  margin-left: 10px;
+  position: absolute;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+#cadastro_submit {
+  height: 36px;
+  width: 200px;
+  border-radius: 30px;
+  border: none;
+  background-color: #2f6427;
+  color: #acefac;
+  font-weight: bold;
+}
+
+#a_cadastro {
+  color: #acefac;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* PRODUTO */
+
+/* editar a linha horizontal de produtos */
+.hr_produtos {
+  border: 3px solid #2f6427;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 85vw;
+  border-collapse: collapse;
+  font-size: 18px;
+  border: 1px solid rgb(16, 194, 31);
+}
+
+/* container das fotos da página produtos */
+.container_imgProdutos {
+  display: flex;
+  flex-wrap: wrap; /* comportamento responsivo */
+  justify-content: center;
+  padding: 0; /* Remove qualquer preenchimento interno */
+}
+
+/* Faz as imagens ocuparem o máximo possível dentro de suas colunas */
+.img_produtos {
+  scale: 0.9;
+  width: 400px !important; /* Limita a largura máxima da imagem */
+  border-radius: 30px;
+  margin: 20px; /* um pouco de margem entre as imagens e fora delas */
+  margin-bottom: 10px; /* diminuir espaçamento  */
+}
+/* alterar resoluçao das imagens quando for computador */
+@media (min-width: 650px) {
+  .img_produtos {
+    width: 400px !important;
+  }
+}
+
+th,
+td {
+  padding: 16px 25px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+th {
+  background-color: #2f6427;
+  color: #fff;
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #b2cbb2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #739e73;
+}
+
+#contato h3 {
+  font-weight: bold;
+  color: white;
+}
+
+/* IMAGEM NO CANTO DA TELA */
+.aside_whats img {
+  position: fixed;
+  width: 12vw;
+  right: 3vw;
+  top: 85vh;
+  transition: transform 0.5s ease;
+  height: rgb(173, 110, 110);
+  width: 40px;
+}
+
+.aside_whats img:hover {
+  transform: rotateX(360deg);
+}
+
+.aside_gmail img {
+  position: fixed;
+  width: 12vw;
+  right: 3vw;
+  top: 75vh;
+  transition: transform 0.5s ease;
+  height: 40px;
+  width: 40px;
+}
+
+.aside_gmail img:hover {
+  transform: rotateX(360deg);
+}
+
+/* TELA POPUP */
+.popup.overlay {
+  position: fixed;
+  top: 10vh;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: none;
+}
+
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  /* de preferencia vai sumir */
+  background: #739e73;
+  /* tamanho do rgba(110, 190, 123, 0.7) */
+  width: 309px;
+  height: 400px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 30px 0 30px 0;
+}
+
+.popup .content h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.popup .content p {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  /* cor do "X" */
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content {
+  /* animação pequena */
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+  /* para aparecer na tela */
+}
+
+/* REMOVER O SCROLL HORIZONTAL */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* DESKTOP */
+@media (min-width: 650px) {
+  nav {
+    width: 100vw;
+    /* Reduzi a altura da nav no desktop */
+  }
+
+  #btn-dropdown {
+    display: none;
+    /* Remove o botão dropdown no desktop */
+  }
+
+  #logo img {
+    position: absolute;
+    width: 200px;
+    top: 35px;
+    /* centralizar a logo */
+    left: 43%;
+    right: 55%;
+    z-index: 100;
+  }
+
+  /* FOOTER RESPONSIVO */
+  footer {
+    background-color: #2f6427 !important;
+  }
+
+  #footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -5px;
+  }
+
+  #footer-logo img {
+    width: 150px !important;
+    margin-top: 10px;
+  }
+
+  /* NAV */
+  #home-nav {
+    padding-left: 35px;
+  }
+  #nome-nav{
+    margin-left: -70px;
+  }
+  #contato-nav {
+    padding-left: 20px;
+  }
+
+
+  #contato {
+    margin-top: 10px;
+  }
+
+  .contato-fluid {
+    display: flex;
+    /* alinhar verticalmente o texto */
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contato-container img {
+    width: 50px;
+  }
+
+  .contato-fluid p {
+    /* alterar distanciamento */
+    margin-left: 30px;
+    /* alinha no centro da imagem */
+    margin-top: 15px;
+    color: #fff !important;
+  }
+
+  .footer-img {
+    float: left;
+  }
+
+  .contato-container p {
+    font-size: 20px;
+  }
+
+  /* alterar o distanciamento do carousel */
+  main #carouselExampleControls {
+    top: -20px;
+    margin-bottom: 30px;
+  }
+
+  #video-mkt {
+    height: 530px;
+    object-fit: cover;
+  }
+
+  ul.dropdown-menu {
+    display: flex;
+    /* Alinha os itens horizontalmente */
+    justify-content: center;
+    position: relative;
+    /* Torna o dropdown menu relativo para evitar sumiço */
+    margin: 0;
+    /* Remove margens */
+    background-color: #2f6427 !important;
+    /* Define a cor de fundo verde */
+    border-radius: 0 !important;
+    /* Remove bordas arredondadas */
+    box-shadow: none;
+    /* Remove a sombra */
+    border: none;
+    padding: 0;
+    /* Remove padding */
+    top: 0;
+    /* Garante que o menu fique no topo da área disponível */
+    margin-top: 128px !important;
+    width: 100vw; /*largura da navbar*/
+  }
+
+  ul.dropdown-menu li {
+    display: inline-block;
+    /* Exibe os itens em linha */
+    margin: 0 10px;
+    /* Reduzi o espaçamento entre os itens */
+    background-color: transparent;
+    /* Remove o fundo dos itens */
+  }
+
+  ul.dropdown-menu li a {
+    color: #fff;
+    /* Altera a cor do texto */
+    font-size: 18px;
+    /* Reduzi o tamanho da fonte */
+    font-weight: 500;
+    /* Reduzi o peso da fonte */
+    padding: 5px 10px;
+    /* Reduzi o padding ao redor dos links */
+    text-transform: none;
+    /* Retirei o texto em maiúsculas */
+  }
+
+  ul.dropdown-menu li button {
+    /*alterar o sobre*/
+    color: #fff;
+    font-size: 18px;
+  }
+  li button:focus {
+    background-color: transparent !important;
+    color: #fff !important;
+  }
+  ul.dropdown-menu li button:hover {
+    /*alterar o sobre*/
+    color: #fff;
+  }
+
+  ul.dropdown-menu li button.dropdown-item:hover {
+    background-color: transparent;
+  }
+
+  #account {
+    margin-left: 0;
+    /* Reseta a margem no desktop */
+    display: flex;
+    /* Exibe os botões de login/logout em linha */
+  }
+
+  .account {
+    margin-left: 10px;
+    /* Reduzi o espaçamento entre os itens de conta */
+    background-color: transparent;
+    /* Remove o fundo */
+    color: #000;
+    /* Altera a cor do texto */
+    font-size: 14px;
+    /* Reduzi o tamanho da fonte */
+    font-weight: normal;
+    /* Normaliza o peso da fonte */
+  }
+
+  .carousel-item img {
+    height: 530px !important;
+    width: 100%;
+    object-fit: cover;
+    /* Faz com que a imagem cubra o contêiner sem distorcer */
+    object-position: center;
+    /* Centraliza a imagem dentro do contêiner */
+  }
+
+  /* IMAGEM NO CANTO DA TELA */
+  .aside_whats img {
+    position: fixed;
+    width: 4.5vw;
+    right: 3vw;
+    top: 82vh;
+    transition: transform 0.5s ease;
+  }
+
+  .aside img:hover {
+    transform: rotateX(360deg);
+  }
+
+  /* para o popup ir para baixo */
+  .popup .content {
+    top: 65%;
+    width: 400px;
+    height: 350px;
+  }
+
+  #invertido {
+    flex-direction: row;
+  }
+
+  .text_center {
+    display: flex !important;
+    top: 50% !important;
+    bottom: 50% !important;
+  }
+}
