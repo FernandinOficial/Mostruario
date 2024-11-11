@@ -49,17 +49,17 @@
             transition: 500ms;
             color: rgb(18, 226, 18);
         }
-
-        /* Opcional: também pode configurar o hover para o link dentro do item */
-        .dropdown-item a:hover {
-
-            color: rgb(18, 226, 18);
-            /* Cor do link no hover */
-        }
-
-        a {
+        a{
             text-decoration: none;
-            color: white;
+            color: white !important;
+        }
+        button {
+            color: white !important;
+        }
+        /* Opcional: também pode configurar o hover para o link dentro do item */
+        button:hover {
+            color: rgb(18, 226, 18) !important;
+            /* Cor do link no hover */
         }
     </style>
 </head>
@@ -73,10 +73,10 @@
                 <i class="fas fa-bars"></i> <!-- Ícone de três barras (hambúrguer) -->
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button"><a href="#">Home</a></button>
-                <button class="dropdown-item" type="button"><a href="#offset-torcida">Sacolas Offset</a></button>
-                <button class="dropdown-item" type="button"><a href="#kraft-torcida">Sacolas Kraft</a></button>
-                <button class="dropdown-item" type="button"><a href="#breve">Em breve...</a></button>
+                <a href="#"><button class="dropdown-item" type="button">Home</button></a>
+                <a href="#offset-torcida"><button class="dropdown-item" type="button">Sacolas Offset</button></a>
+                <a href="#kraft-torcida"><button class="dropdown-item" type="button">Sacolas Kraft</button></a>
+                <a href="#breve"><button class="dropdown-item" type="button">Em breve...</button></a>
             </div>
         </div>
     </nav>
